@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public Text recordText;
 
     private float surviveTime;
-    private bool isGameOver;
+    private bool isGameover;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
