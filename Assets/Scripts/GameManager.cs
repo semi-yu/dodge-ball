@@ -43,6 +43,6 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetFloat("BestTime", bestTime);
         }
 
-        recordTest.test = "Best time: " + (int) bestTime;
+        recordText.text = "Best time: " + (int) bestTime;
     }
 }
