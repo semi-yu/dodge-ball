@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void EndGame() {
+    public void EndGame() {
         isGameover = true;
         gameoverText.SetActive(true);
 
