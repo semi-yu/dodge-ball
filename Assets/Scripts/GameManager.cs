@@ -34,5 +34,15 @@ public class GameManager : MonoBehaviour
     void EndGame() {
         isGameover = true;
         gameoverText.SetActive(true);
+
+        float bestTime = PlayerPrefs.GetFloat("BestTime");
+
+        if (surviveTime > bestTime) {
+            bestTime = surviveTime;
+
+            PlayerPrefs.SetFloat("BestTime", bestTime);
+        }
+
+        recordTest.test = "Best time: " + (int) bestTime;
     }
 }
